@@ -5,6 +5,12 @@
   font-family: "Abel", sans-serif;
   font-weight: 500;
   font-style: normal;
+  color: #FFFFFF;
+}
+
+::placeholder {
+  color: #FFFFFF;
+  opacity: 1;
 }
 
 .contanior {
@@ -13,17 +19,19 @@
   height: 100vh;
   margin-top: -9vh;
   overflow: hidden;
+  position: relative;
 }
 
 .decorator1 {
   width: 1300px;
   height: 800px;
   background-color: #1A1A1A;
-  margin-left: -432px;
+  margin-left: -500px;
   margin-top: -170px;
   rotate: -20deg;
   box-shadow: inset -10px -3px 15px #242424;
   transform: skew(8deg);
+  position: absolute;
 }
 
 nav {
@@ -68,4 +76,41 @@ nav {
 .links {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.filters {
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.options .filterOption {
+  color: #FFFFFF;
+  background-color: #3D3D3D;
+  opacity: 0.39;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.options .active {
+  opacity: 1;
+}
+
+.buttonComponent {
+  width: 85%;
+  background-color: #292929;
+  margin-top: 0.3rem;
+  padding: 0.7rem 0;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  box-shadow: 0 4px 4px rgba(80, 80, 80, 0.26);
+
 }

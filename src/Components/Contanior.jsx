@@ -4,6 +4,7 @@ const Contanior = ({ children }) => {
   return (
     <div className="contanior">
       <div className="decorator1"></div>
+      {children}
     </div>
   );
 };
