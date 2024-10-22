@@ -3,11 +3,15 @@ import Contanior from "../Components/Contanior";
 import { ReactComponent as Search_Icon } from "../assets/Search_Icon.svg";
 import Filters from "../Components/Filters";
 import Button from "../Components/Button";
+import ProductCard from "../Components/ProductCard";
+import { Outlet, useNavigate } from "react-router-dom";
 
 const Products = () => {
   const [productTypes, setProductTypes] = useState("All");
   const [priceFilter, setPriceFilter] = useState("Low-High");
   const [timeFilter, setTimeFilter] = useState("Latest");
+
+  const navigate = useNavigate();
 
   const filters = [
     {
@@ -26,11 +30,174 @@ const Products = () => {
       active: timeFilter,
     },
   ];
+
+  const products = [
+    {
+      productType: "Noraml",
+      productImage:
+        "https://cdn.pixabay.com/photo/2022/12/01/04/42/man-7628305_1280.jpg",
+      productName: "An Airplane",
+      productPrice: "$ 7.99",
+      productDescription: "This product is Blah Blah Blah.",
+      ProductIngridents: [
+        "Origami Paper",
+        "Glue Gun For Guling",
+        "Secth Pens / Colors",
+        "Hard Work / Dedication ",
+      ],
+    },
+    {
+      productType: "Noraml",
+      productImage:
+        "https://cdn.pixabay.com/photo/2022/12/01/04/42/man-7628305_1280.jpg",
+      productName: "An Airplane",
+      productPrice: "$ 7.99",
+      productDescription: "This product is Blah Blah Blah.",
+      ProductIngridents: [
+        "Origami Paper",
+        "Glue Gun For Guling",
+        "Secth Pens / Colors",
+        "Hard Work / Dedication ",
+      ],
+    },
+    {
+      productType: "Noraml",
+      productImage:
+        "https://cdn.pixabay.com/photo/2022/12/01/04/42/man-7628305_1280.jpg",
+      productName: "An Airplane",
+      productPrice: "$ 7.99",
+      productDescription: "This product is Blah Blah Blah.",
+      ProductIngridents: [
+        "Origami Paper",
+        "Glue Gun For Guling",
+        "Secth Pens / Colors",
+        "Hard Work / Dedication ",
+      ],
+    },
+    {
+      productType: "Noraml",
+      productImage:
+        "https://cdn.pixabay.com/photo/2022/12/01/04/42/man-7628305_1280.jpg",
+      productName: "An Airplane",
+      productPrice: "$ 7.99",
+      productDescription: "This product is Blah Blah Blah.",
+      ProductIngridents: [
+        "Origami Paper",
+        "Glue Gun For Guling",
+        "Secth Pens / Colors",
+        "Hard Work / Dedication ",
+      ],
+    },
+    {
+      productType: "Noraml",
+      productImage:
+        "https://cdn.pixabay.com/photo/2022/12/01/04/42/man-7628305_1280.jpg",
+      productName: "An Airplane",
+      productPrice: "$ 7.99",
+      productDescription: "This product is Blah Blah Blah.",
+      ProductIngridents: [
+        "Origami Paper",
+        "Glue Gun For Guling",
+        "Secth Pens / Colors",
+        "Hard Work / Dedication ",
+      ],
+    },
+    {
+      productType: "Noraml",
+      productImage:
+        "https://cdn.pixabay.com/photo/2022/12/01/04/42/man-7628305_1280.jpg",
+      productName: "An Airplane",
+      productPrice: "$ 7.99",
+      productDescription: "This product is Blah Blah Blah.",
+      ProductIngridents: [
+        "Origami Paper",
+        "Glue Gun For Guling",
+        "Secth Pens / Colors",
+        "Hard Work / Dedication ",
+      ],
+    },
+    {
+      productType: "Noraml",
+      productImage:
+        "https://cdn.pixabay.com/photo/2022/12/01/04/42/man-7628305_1280.jpg",
+      productName: "An Airplane",
+      productPrice: "$ 7.99",
+      productDescription: "This product is Blah Blah Blah.",
+      ProductIngridents: [
+        "Origami Paper",
+        "Glue Gun For Guling",
+        "Secth Pens / Colors",
+        "Hard Work / Dedication ",
+      ],
+    },
+    {
+      productType: "Noraml",
+      productImage:
+        "https://cdn.pixabay.com/photo/2022/12/01/04/42/man-7628305_1280.jpg",
+      productName: "An Airplane",
+      productPrice: "$ 7.99",
+      productDescription: "This product is Blah Blah Blah.",
+      ProductIngridents: [
+        "Origami Paper",
+        "Glue Gun For Guling",
+        "Secth Pens / Colors",
+        "Hard Work / Dedication ",
+      ],
+    },
+    {
+      productType: "Noraml",
+      productImage:
+        "https://cdn.pixabay.com/photo/2022/12/01/04/42/man-7628305_1280.jpg",
+      productName: "An Airplane",
+      productPrice: "$ 7.99",
+      productDescription: "This product is Blah Blah Blah.",
+      ProductIngridents: [
+        "Origami Paper",
+        "Glue Gun For Guling",
+        "Secth Pens / Colors",
+        "Hard Work / Dedication ",
+      ],
+    },
+    {
+      productType: "Noraml",
+      productImage:
+        "https://cdn.pixabay.com/photo/2022/12/01/04/42/man-7628305_1280.jpg",
+      productName: "An Airplane",
+      productPrice: "$ 7.99",
+      productDescription: "This product is Blah Blah Blah.",
+      ProductIngridents: [
+        "Origami Paper",
+        "Glue Gun For Guling",
+        "Secth Pens / Colors",
+        "Hard Work / Dedication ",
+      ],
+    },
+    {
+      productType: "Noraml",
+      productImage:
+        "https://cdn.pixabay.com/photo/2022/12/01/04/42/man-7628305_1280.jpg",
+      productName: "An Airplane",
+      productPrice: "$ 7.99",
+      productDescription: "This product is Blah Blah Blah.",
+      ProductIngridents: [
+        "Origami Paper",
+        "Glue Gun For Guling",
+        "Secth Pens / Colors",
+        "Hard Work / Dedication ",
+      ],
+    },
+  ];
+
   return (
     <Contanior>
+      <Outlet />
       <div className="productsWrapper">
         <div className="productsMain">
-          <div className="productsLeftSide"></div>
+          <div className="productsLeftSide">
+            {products.map((value) => {
+              return <ProductCard cardDetails={value} />;
+            })}
+          </div>
           <div className="productsRightSide">
             <div className="searchBar">
               <input type="text" placeholder="Search here...." />
@@ -47,7 +214,9 @@ const Products = () => {
             </div>
             <div className="addProductContanior">
               <h5>Want to add product ?</h5>
-              <Button value={"Add Product +"} />
+              <div onClick={() => navigate("/products/addProduct")}>
+                <Button value={"Add Product +"} />
+              </div>
             </div>
           </div>
         </div>

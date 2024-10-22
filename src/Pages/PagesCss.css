@@ -208,6 +208,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .productsMain {
@@ -221,14 +222,20 @@
 }
 
 .productsLeftSide {
-    width: 68%;
-    height: 100%;
+    width: 65%;
+    height: 89%;
+    /* padding: 50px 40px; */
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    margin: 3% 5%;
 }
 
 .productsRightSide {
     background-color: #212121;
     opacity: 1;
-    width: 32%;
+    width: 35%;
     height: 100%;
     border-radius: 0 20px 20px 0;
     padding: 25px 25px;
@@ -263,4 +270,376 @@
 .addProductContanior {
     margin-top: 3rem;
     text-align: center;
+}
+
+/* <----------- End ------------> */
+
+
+/* <----------- Sign Up styles ------------> */
+
+.signUpWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 4rem;
+    gap: 20rem;
+}
+
+.signUpRightSide {
+    width: 404px;
+    height: 579px;
+    background-color: rgba(30, 30, 30, 30%);
+    border-radius: 15px;
+}
+
+.signUpRightSide h3 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 1rem;
+}
+
+.signUpRightSide h5 {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 2.3rem;
+}
+
+.signUpRightSide input {
+    margin-left: 30px;
+    font-size: 16px;
+    width: 85%;
+    height: 48px;
+    background-color: rgba(59, 59, 59, 24%);
+    outline: none;
+    border: none;
+    margin-top: 1.2rem;
+    border-radius: 50px;
+    padding-left: 1.5rem;
+}
+
+.signUpRightSide input::placeholder {
+    color: rgba(255, 255, 255, 50%);
+}
+
+.signUpRightSide .buttonSection {
+    margin-top: 2.3rem;
+    text-align: center;
+}
+
+.signUpRightSide .buttonSection p {
+    text-align: right;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+/* <----------- End ------------> */
+
+
+/* <----------- Log In styles ------------> */
+
+
+.loginWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 4rem;
+    gap: 20rem;
+}
+
+.loginLeftSide {
+    margin-left: 6rem;
+    margin-top: 5rem;
+}
+
+.loginRightSide {
+    width: 404px;
+    height: 579px;
+    background-color: rgba(30, 30, 30, 30%);
+    border-radius: 15px;
+}
+
+.loginRightSide h3 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 1.5rem;
+}
+
+.loginRightSide h5 {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 3rem;
+}
+
+.loginRightSide input {
+    margin-left: 30px;
+    font-size: 16px;
+    width: 85%;
+    height: 48px;
+    background-color: rgba(59, 59, 59, 24%);
+    outline: none;
+    border: none;
+    margin-top: 1.2rem;
+    border-radius: 50px;
+    padding-left: 1.5rem;
+}
+
+.loginRightSide input::placeholder {
+    color: rgba(255, 255, 255, 50%);
+}
+
+.loginRightSide .buttonSection {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.loginRightSide .buttonSection p {
+    text-align: right;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.loginRightSide .buttonSection .forgetPass {
+    text-align: left;
+    margin-left: 2.5rem;
+    margin-bottom: 3.5rem;
+}
+
+/* <----------- End ------------> */
+
+
+/* <----------- Profile styles ------------> */
+
+.profileWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileMain {
+    width: 94%;
+    height: 80%;
+    margin-top: 5rem;
+}
+
+.profileMain .userDetails,
+.profileMain .cart,
+.profileMain .liked,
+.profileMain .buyed {
+    border-radius: 15px;
+    background-color: rgb(70 70 70 / 50%);
+    padding: 1.5rem;
+}
+
+.profileMain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.userDetails {
+    grid-column: 1 / 3;
+    grid-row: 1/3;
+}
+
+.userDetails .topSection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.userDetails .topSection .leftSection h3 {
+    color: #878787;
+    font-size: 24px;
+}
+
+.userDetails .topSection .rightSection button {
+    background-color: #3D3D3D;
+    border-radius: 7px;
+    border: none;
+    font-size: 19.5px;
+    padding: 0.6rem 1.5rem;
+}
+
+.userDetails .bottomSection h3 {
+    color: #ADADAD;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.cart {
+    grid-column: 3 / 4;
+    grid-row: 1/6;
+}
+
+.cart h3 {
+    color: #878787;
+    font-size: 24px;
+}
+
+.cart .cartProducts {
+    margin-top: 1rem;
+    overflow-y: scroll;
+    height: 80%;
+    padding-right: 0.3rem;
+}
+
+.cart .cartProducts .product {
+    width: 100%;
+    height: 5rem;
+    background-color: #363535;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart .cartProducts .product .box {
+    width: 50px;
+    height: 50px;
+    background-color: #212121;
+    border-radius: 4.2px;
+}
+
+.cart .cartProducts .product .delete {
+    font-size: 25px;
+    margin-right: 1rem;
+}
+
+.cart .button {
+    text-align: center;
+    margin-top: 1rem;
+    width: 95%;
+    height: 50px;
+    border-radius: 17px;
+    border: none;
+    background-color: #3D3D3D;
+    font-size: 20px;
+}
+
+.liked {
+    grid-column: 1;
+    grid-row: 3 / 6;
+}
+
+.liked h3 {
+    color: #878787;
+    font-size: 24px;
+}
+
+.liked .likedProducts {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow-y: scroll;
+    height: 70%;
+}
+
+.liked .likedProducts .product {
+    width: 86px;
+    height: 93px;
+    border-radius: 7.2px;
+    background-color: #363535;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.liked .likedProducts .product .box {
+    width: 100%;
+    height: 80%;
+    background-color: #212121;
+    border-radius: 7.2px;
+}
+
+.liked .likedProducts .product h5 {
+    font-size: 10px;
+}
+
+.liked .button {
+    margin-top: 1rem;
+    width: 30%;
+    height: 24px;
+    border-radius: 17px;
+    border: none;
+    background-color: #3D3D3D;
+    font-size: 10px;
+    margin-left: 70%;
+    margin-top: 1.5rem;
+}
+
+.buyed {
+    grid-column: 2;
+    grid-row: 3 / 6;
+}
+
+.buyed h3 {
+    color: #878787;
+    font-size: 24px;
+}
+
+.buyed .buyedProducts {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow-y: scroll;
+    height: 70%;
+}
+
+.buyed .buyedProducts .box {
+    width: 5rem;
+    height: 5rem;
+    background-color: #212121;
+    border-radius: 7.2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.buyed .buyedProducts .box img {
+    width: 100%;
+    height: 100%;
+}
+
+.buyed .buyedProducts .box .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(59, 59, 59, 100%);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    z-index: 100;
+    top: 0;
+}
+
+.buyed .button {
+    margin-top: 1rem;
+    width: 30%;
+    height: 24px;
+    border-radius: 17px;
+    border: none;
+    background-color: #3D3D3D;
+    font-size: 10px;
+    margin-left: 70%;
+    margin-top: 1.5rem;
 }
